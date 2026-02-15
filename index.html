@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagens do Universo Infantil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+   <!-- 🎥 Vídeo Background -->
+  <video autoplay muted loop playsinline class="hero-bg" id="heroVideo" preload="auto">
+    <source src="video-bg.mp4" type="video/mp4">
+  </video>
+
+  <!-- ✨ Canvas Partículas -->
+  <canvas id="magicParticles"></canvas>
+
+  <!-- 🌌 Overlay escuro para contraste -->
+  <div class="hero-overlay"></div>
+
+  <!-- ✨ Conteúdo original -->
+  <div class="hero-content">
+    <h1>Personagens do Universo Infantil</h1>
+    <p>Prepare-se para uma jornada mágica pelos contos mais encantadores.</p>
+    <button onclick="scrollToSection()">Explorar</button>
+  </div>
+
+</header>
+
+<section class="parallax cinderela">
+  <div class="content">
+    <h2>Cinderela</h2>
+    <p>Observe o estilo da roupa, cabelo e acessórios.</p>
+    <p>O que uma artista deve fazer para representar bem esse papel?</p>
+  </div>
+</section>
+
+<section class="parallax chapeuzinho">
+  <div class="content">
+    <h2>Chapeuzinho Vermelho</h2>
+    <p>Ela usa uma capa vermelha e vive uma aventura na floresta.</p>
+  </div>
+</section>
+
+<section class="parallax bruxa">
+  <div class="content">
+    <h2>Bruxa</h2>
+    <p>Como alguém deve se vestir para representar uma bruxa?</p>
+  </div>
+</section>
+
+<section class="parallax pinoquio">
+  <div class="content">
+    <h2>Pinóquio</h2>
+    <p>Você já pensou em representar o Pinóquio?</p>
+  </div>
+</section>
+
+<section class="parallax peterpan">
+  <div class="content">
+    <h2>Peter Pan</h2>
+    <p>Menino alegre e travesso que vive grandes aventuras.</p>
+  </div>
+</section>
+
+<section class="parallax sininho">
+  <div class="content">
+    <h2>Sininho</h2>
+    <p>Que elementos são importantes para representar a Sininho?</p>
+  </div>
+</section>
+
+<section class="final" id="finalSection">
+  <h2>Agora, crie seu personagem.</h2>
+  <p>Para isso, inspire-se em algumas características que você observou dos outros personagens.</p>
+
+  <div class="characters-grid">
+    <img src="cinderela-icon.png" class="character">
+    <img src="chapeuzinho-icon.png" class="character">
+    <img src="bruxa-icon.png" class="character">
+    <img src="pinoquio-icon.png" class="character">
+    <img src="peterpan-icon.png" class="character">
+    <img src="sininho-icon.png" class="character">
+  </div>
+
+  <button id="openModal" class="cta-button">
+    Criar Meu Personagem
+  </button>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h3>Digite as características do seu personagem aqui:</h3>
+    <input type="text" placeholder="Digite suas características..." />
+    <button class="submit-btn" id="submitCharacter">Começar Jornada</button>
+
+    <div class="success-message" id="successMessage">
+    ✨ Informações salvas com sucesso!
+  </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
