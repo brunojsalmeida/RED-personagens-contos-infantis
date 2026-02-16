@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
   let progress = Math.min(scrollY / heroHeight, 1);
 
   // Blur máximo desejado
-  let blurValue = progress * 8; // ajuste aqui (8px ideal)
+  let blurValue = progress * 8;
 
   heroVideo.style.filter = `blur(${blurValue}px)`;
 
@@ -139,9 +139,7 @@ const revealOnScroll = () => {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
-/* =====================
-   MODAL CONTROL
-===================== */
+/* CONTROLE DO MODAL */
 
 const openModal = document.getElementById('openModal');
 const modalOverlay = document.getElementById('modalOverlay');

@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 
-/* 🎥 Vídeo */
+/* Vídeo */
 .hero-bg {
   position: absolute;
   top: 0;
@@ -76,7 +76,7 @@ body {
   will-change: filter;
 }
 
-/* 🌌 Overlay */
+/* Overlay */
 .hero-overlay {
   transition: background 0.2s linear;
   position: absolute;
@@ -116,7 +116,7 @@ body {
   filter: blur(0px);
 }
 
-/* ✨ Conteúdo */
+/* Conteúdo */
 .hero-content {
   color: white;
   max-width: 800px;
@@ -265,9 +265,7 @@ p {
   box-shadow: 0 0 40px rgba(212, 175, 55, 1);
 }
 
-/* =======================
-   MODAL
-======================= */
+/* MODAL */
 
 .modal-overlay {
   position: fixed;

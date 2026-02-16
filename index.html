@@ -9,18 +9,18 @@
 <body>
 
 <header class="hero">
-   <!-- 🎥 Vídeo Background -->
+   <!-- Vídeo Background -->
   <video autoplay muted loop playsinline class="hero-bg" id="heroVideo" preload="auto">
     <source src="video-bg.mp4" type="video/mp4">
   </video>
 
-  <!-- ✨ Canvas Partículas -->
+  <!-- Canvas Partículas -->
   <canvas id="magicParticles"></canvas>
 
-  <!-- 🌌 Overlay escuro para contraste -->
+  <!-- Overlay escuro para contraste -->
   <div class="hero-overlay"></div>
 
-  <!-- ✨ Conteúdo original -->
+  <!-- Conteúdo -->
   <div class="hero-content">
     <h1>Personagens do Universo Infantil</h1>
     <p>Prepare-se para uma jornada mágica pelos contos mais encantadores.</p>
@@ -93,13 +93,15 @@
 <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal">
-    <h3>Digite as características do seu personagem aqui:</h3>
-    <input type="text" placeholder="Digite suas características..." />
+    <h3>Para representar um personagem, é preciso refletir sobre as seguintes questões: </h3>
+    <input type="number" placeholder="Que idade tem o personagem?" />
+    <input type="text" placeholder="Em que lugar o personagem está?" />
+    <input type="text" placeholder="O que o personagem está fazendo?" />
+    <input type="text" placeholder="O que ele gosta de fazer?" />
+    <input type="text" placeholder="Esse personagem é alegre, triste, agitado ou calmo?" />
+
     <button class="submit-btn" id="submitCharacter">Começar Jornada</button>
 
-    <div class="success-message" id="successMessage">
-    ✨ Informações salvas com sucesso!
-  </div>
   </div>
 </div>
 
